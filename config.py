@@ -25,27 +25,27 @@ UPSTREAM_REPO = getenv(
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
-if str(getenv("SUPPORT_CHANNEL")).strip() == "":
+if not str(getenv("SUPPORT_CHANNEL")).strip():
     SUPPORT_CHANNEL = None
 else:
     SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL"))
-if str(getenv("SUPPORT_GROUP")).strip() == "":
+if not str(getenv("SUPPORT_GROUP")).strip():
     SUPPORT_GROUP = None
 else:
     SUPPORT_GROUP = str(getenv("SUPPORT_GROUP"))
 
 
-if str(getenv("STRING_SESSION1")).strip() == "":
+if not str(getenv("STRING_SESSION1")).strip():
     STRING1 = str(None)
 else:
     STRING1 = str(getenv("STRING_SESSION1"))
 
-if str(getenv("STRING_SESSION2")).strip() == "":
+if not str(getenv("STRING_SESSION2")).strip():
     STRING2 = str(None)
 else:
     STRING2 = str(getenv("STRING_SESSION2"))
 
-if str(getenv("STRING_SESSION3")).strip() == "":
+if not str(getenv("STRING_SESSION3")).strip():
     STRING3 = str(None)
 else:
     STRING3 = str(getenv("STRING_SESSION3"))
